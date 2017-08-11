@@ -1,0 +1,63 @@
+@import ../molecules/mixins
+
+@font-face
+	font-family: 'feather'
+	font-weight: normal
+	font-style: normal
+	src: url('../fonts/feather/feather.eot?1gafuo')
+	src: url('../fonts/feather/feather.eot?1gafuo#iefix') format('embedded-opentype'), url('../fonts/feather/feather.woff2?1gafuo') format('woff2'), url('../fonts/feather/feather.ttf?1gafuo') format('truetype'), url('../fonts/feather/feather.woff?1gafuo') format('woff'), url('../fonts/feather/feather.svg?1gafuo#feather') format('svg')
+
+
+body
+  font-family: 'Avenir Next', Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif
+  overflow: hidden
+  margin: 0
+  color: #cecece
+  background: #2a2b30
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  strong
+    font-weight: $bold
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  vertical-align: baseline
+  -webkit-font-smoothing: antialiased
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+a
+  +transition(.5s)
+  text-decoration: none
+  color: #fff
+  outline: none
+  &:hover,
+  &:focus
+    text-decoration: none !important
+    color: #ddd
+
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote
+  &:before, &:after
+    content: ''
+    content: none
+
+q
+  &:before, &:after
+    content: ''
+    content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0

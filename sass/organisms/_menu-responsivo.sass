@@ -1,0 +1,187 @@
+.menu
+  .content
+    .device
+      position: absolute
+      width: 100%
+      left: 0
+
+      .device__screen
+        position: relative
+        overflow: hidden
+        width: 100%
+
+        .menu-icon-wrapper
+          float: right
+          position: relative
+          display: inline-block
+          margin: 27px
+          width: 34px
+          height: 34px
+          pointer-events: none
+          +transition(.1s)
+
+          svg
+            position: absolute
+            top: -33px
+            left: -33px
+            -webkit-transform: scale(0.1)
+            -ms-transform: scale(0.1)
+            transform: scale(0.1)
+            -webkit-transform-origin: 0 0
+            -ms-transform-origin: 0 0
+            -transform-origin: 0 0
+
+          &.scaled
+            -webkit-transform: scale(0.5)
+            -ms-transform: scale(0.5)
+            transform: scale(0.5)
+
+          .menu-icon-trigger
+            position: relative
+            width: 100%
+            height: 100%
+            cursor: pointer
+            pointer-events: auto
+            background: none
+            border: none
+            margin: 0
+            padding: 0
+
+            &:hover
+              outline: none
+            &:hover
+              outline: none
+
+        .vermelho
+          svg
+            path
+              stroke: $vermelho
+              stroke-width: 60px
+              stroke-linecap: round
+              stroke-linejoin: round
+              fill: transparent
+        .dummy
+          margin: 93px 0 0
+          padding-top: 10px
+          width: 100%
+          height: 100%
+          +transition(.7s)
+          text-align: center
+          display: none
+          .animacao
+            visibility: hidden
+            +transition(.7s)
+            .dummy__item
+              height: 3em
+              margin: 0.5em 1.25em
+              border-radius: 4px
+              background: rgba(29, 44, 60, .8)
+              -webkit-transition: -webkit-transform 0.5s
+              transition: transform 0.5s
+              -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1)
+              transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1)
+              color: $cinza
+              +font-size(22px)
+              line-height: 40px
+              text-transform: uppercase
+              font-weight: $bold
+
+              .social
+                display: flex
+                [class^="icone-"]
+                  +opacity(0)
+                  +transition(.4s)
+                  margin: 7px
+                  width: 50px
+                  height: 50px
+              a
+                padding: 12px 140px
+
+            .dummy__item
+              -webkit-transform: translate3d(-100%, 0, 0) translate3d(-2em, 0, 0) scale3d(0.5, 1, 1)
+              transform: translate3d(-100%, 0, 0) translate3d(-2em, 0, 0) scale3d(0.5, 1, 1)
+              -webkit-transform-origin: 100% 50%
+              transform-origin: 100% 50%
+
+            .setimo
+              -webkit-transition-delay: 0.05s
+              transition-delay: 0.05s
+              background-color: rgba($preto, 0)
+              margin-bottom: 43px
+            .sexto
+              -webkit-transition-delay: 0.1s
+              transition-delay: 0.1s
+            .quinto
+              -webkit-transition-delay: 0.15s
+              transition-delay: 0.15s
+            .quarto
+              -webkit-transition-delay: 0.2s
+              transition-delay: 0.2s
+            .terceiro
+              -webkit-transition-delay: 0.25s
+              transition-delay: 0.25s
+            .segundo
+              -webkit-transition-delay: 0.3s
+              transition-delay: 0.3s
+            .primeiro
+              -webkit-transition-delay: 0.35s
+              transition-delay: 0.35s
+        .dummy__active
+          background-color: rgba($preto, .6)
+          width: 100%
+          height: 100%
+          +transition(.7s)
+          text-align: center
+          display: block
+
+          .animacao
+            visibility: visible
+            +transition(.7s)
+            .dummy__item
+              -webkit-transition-timing-function: cubic-bezier(0.56, 1.19, 0.2, 1.05)
+              transition-timing-function: cubic-bezier(0.56, 1.19, 0.2, 1.05)
+              -webkit-transform: translate3d(0, 0, 0)
+              transform: scale3d(0, 0, 0)
+              color: $cinza
+              +font-size(22px)
+              line-height: 40px
+              text-transform: uppercase
+              font-weight: $bold
+              .sociais
+                display: inline-flex
+                text-align: center
+                margin: 0 auto
+                .social
+                  display: inline-flex
+                  text-align: center
+                  width: 100%
+                  margin: 0 auto
+                  [class^="icone-"]
+                    +transition(.4s)
+                    +opacity(.7)
+                    margin: 5px
+                    width: 45px
+                    height: 45px
+            .primeiro
+              -webkit-transition-delay: 0.05s
+              transition-delay: 0.05s
+            .segundo
+              -webkit-transition-delay: 0.1s
+              transition-delay: 0.1s
+            .terceiro
+              -webkit-transition-delay: 0.15s
+              transition-delay: 0.15s
+            .quarto
+              -webkit-transition-delay: 0.2s
+              transition-delay: 0.2s
+            .quinto
+              -webkit-transition-delay: 0.25s
+              transition-delay: 0.25s
+            .sexto
+              -webkit-transition-delay: 0.3s
+              transition-delay: 0.3s
+            .setimo
+              -webkit-transition-delay: 0.4s
+              transition-delay: 0.4s
+              background-color: rgba($preto, 0)
+              margin-bottom: 43px

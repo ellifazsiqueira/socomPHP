@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>USASOC Brasil</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">
+    <link rel="stylesheet" href="css/plugins.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/geral.css">
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <script src="js/modernizr.custom.js"></script>
+    <!--  Teste do menu  -->
+    <script src="js/segment.min.js"></script>
+    <script src="js/ease.min.js"></script>
+</head>
+
+<body>
+    <div class="layout">
+        <header>
+          <div class="logo-sup">
+            <a href="index.html">
+              <img src="images\misc\logo-usasoc2.png" alt="">
+            </a>
+          </div>
+          <div class="menu">
+              <div class="content">
+                  <div class="device">
+                      <div class="device__screen">
+                          <div id="menu-icon-wrapper" class="menu-icon-wrapper vermelho" style="visibility: hidden">
+                              <svg width="1000px" height="1000px">
+                                  <path id="pathA" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+                                  <path id="pathB" d="M 300 500 L 700 500"></path>
+                                  <path id="pathC" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+                              </svg>
+                              <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+                          </div>
+                          <div id="dummy" class="dummy">
+                              <div class="animacao">
+                                  <a href="index.html">
+                                      <div class="dummy__item primeiro active">Inicio</div>
+                                  </a>
+                                  <a href="sobre.html">
+                                      <div class="dummy__item segundo">Sobre</div>
+                                  </a>
+                                  <a href="alistamento.html">
+                                      <div class="dummy__item terceiro">Alistamento</div>
+                                  </a>
+                                  <a href="pessoal.html">
+                                      <div class="dummy__item quarto">Pessoal</div>
+                                  </a>
+                                  <a href="fotos.html">
+                                      <div class="dummy__item quinto">Galeria</div>
+                                  </a>
+                                  <a href="contato.html">
+                                      <div class="dummy__item sexto">Contato</div>
+                                  </a>
+                                  <div class="dummy__item setimo">
+                                      <div class="sociais">
+                                          <div class="social">
+                                              <div class="icone-facebook">
+                                                  <img src="" alt="">
+                                              </div>
+                                              <div class="icone-youtube">
+                                                  <img src="" alt="">
+                                              </div>
+                                              <div class="steam">
+                                                  <img src="" alt="">
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="links">
+            <nav>
+              <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="alistamento.html">Alistamento</a></li>
+                <li><a href="pessoal.html">Pessoal</a></li>
+                <li><a href="fotos.html">Fotos</a></li>
+              </ul>
+            </nav>
+          </div>
+          <script src="js/main.js"></script>
+        </header>
+        <main>
+            <section class="inicio">
+                <div class="container">
+                    <div class="unidades">
+                        <div class="logo-rangers">
+                            <img src="images/csib/csib-ranger.png" alt="">
+                        </div>
+                        <div class="logo-rrc">
+                            <img src="images/csib/csib-sfg.png" alt="">
+                        </div>
+                        <div class="logo-usasoc">
+                            <img src="images/misc/logo-usasoc.png" alt="">
+                        </div>
+                        <div class="logo-rrc">
+                            <img src="images/csib/csib-rrc.png" alt="">
+                        </div>
+                        <div class="logo-nighstalker">
+                            <img src="images/csib/csib-nighstalker.png" alt="">
+                        </div>
+                    </div>
+                    <div class="texto">
+                        <h1>United States Army Special Operations Command</h1>
+                        <a href="https://goo.gl/forms/ni2X5hnLV7ZohYFB3">Aliste-se já</a>
+                    </div>
+                    <div class="sociais">
+                        <div class="facebook">
+                            <a href="https://www.facebook.com/USASOCBRASIL/" class="i fa fa-facebook"></a>
+                        </div>
+                        <div class="steam"><a href="http://steamcommunity.com/groups/usasoc-br"><i class="fa fa-steam-square"></i></a></div>
+                        <div class="youtube">
+                            <a href="https://www.youtube.com/USASOCBrasil"><i class="fa fa-youtube-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="rodape">
+                <div class="logo-rodape">
+                    <a href="http://studioinside.com.br">
+                        <img src="images/misc/inside.png" alt="Logo Inside Rodapé">
+                        <p>2017 Todos os Direitos Reservados</p>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/wow/dist/wow.min.js"></script>
+    <script>
+      var hash = window.location.hash,
+        current = 0
+        demos = Array.prototype.slice.call( document.querySelectorAll( '#codrops-demos > a' ) );
+
+      if( hash === '' ) hash = '#set-1';
+      setDemo( demos[ parseInt( hash.match(/#set-(\d+)/)[1] ) - 1 ] );
+
+      demos.forEach( function( el, i ) {
+        el.addEventListener( 'click', function() { setDemo( this ); } );
+      } );
+      function setDemo( el ) {
+        var idx = demos.indexOf( el );
+        if( current !== idx ) {
+          var currentDemo = demos[ current ];
+          currentDemo.className = currentDemo.className.replace(new RegExp("(^|\\s+)" + 'current-demo' + "(\\s+|$)"), ' ');
+        }
+        current = idx;
+        el.className = 'current-demo';
+      };
+    </script>
+</body>
+</html>

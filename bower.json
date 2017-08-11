@@ -1,0 +1,25 @@
+{
+  "name": "socom-a3",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Ellifaz <ellifaz.elf@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "font-awesome": "^4.7.0",
+    "bootstrap-sass": "^3.3.7",
+    "sass-flex-mixin": "^1.0.3",
+    "imagehover.css": "*",
+    "wow": "^1.1.2",
+    "breakpoint-sass": "^2.7.1"
+  }
+}
