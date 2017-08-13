@@ -5,10 +5,9 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device=width, initial-scale=1.0">
 		<title>USASOC Milsim Brasil</title>
-		<script src="js/modernizr-custom.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/home.css" />
 		<link rel="stylesheet" type="text/css" href="css/plugin.css" />
 		<link rel="stylesheet" type="text/css" href="css/geral.css" />
-<!--		<link rel="stylesheet" type="text/css" href="css/home.css" />-->
 		<script src="js/modernizr-custom.js"></script>
 	</head>
 
@@ -29,83 +28,85 @@
 						<a class="bp-nav__item bp-icon" href="https://www.paypal.com/br/home" data-info="Operação Sol Negro - 13AGO2017" target="_blank"><i class="fa fa-calendar-plus-o"></i></a>
 					</nav>
 				</div>
+				<button class="action action--open" aria-label="Open Menu"><span class="icon icon--menu"></span></button>
+				<nav id="ml-menu" class="menu">
+					<button class="action action--close" aria-label="Close Menu"><span class="icon icon--cross"></span></button>
+					<div class="menu__wrap">
+						<!--		Menu Principal			-->
+						<ul data-menu="main" class="menu__level" tabindex="-1" role="menu" aria-label="Inicial">
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Inicio</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-2" aria-owns="submenu-2" href="#">Sobre</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-3" aria-owns="submenu-3" href="#">Galeria</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4" aria-owns="submenu-4" href="#">Administrativo</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Alistamento</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Contato</a></li>
+						</ul>
+						<!--		Menu Sobre			-->
+						<ul data-menu="submenu-2" id="submenu-2" class="menu__level" tabindex="-1" role="menu" aria-label="Sobre">
+							<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-2-1" aria-owns="submenu-2-1" href="#">USASOC</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Estado Maior</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Estatuto Disciplinar</a></li>
+						</ul>
+						<!--		Menu Sobre - USASOC			-->
+						<ul data-menu="submenu-2-1" id="submenu-2-1" class="menu__level" tabindex="-1" role="menu" aria-label="USASOC">
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Rangers</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Green Berets</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Nightstalkers</a></li>
+						</ul>
+						<!--		Menu Galeria			-->
+						<ul data-menu="submenu-3" id="submenu-3" class="menu__level" tabindex="-1" role="menu" aria-label="Galeria">
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Fotos - Operações</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Fotos - Militares</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Youtube - Canais</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Wallpapers</a></li>
+						</ul>
+						<!--		Menu Administrativo			-->
+						<ul data-menu="submenu-4" id="submenu-4" class="menu__level" tabindex="-1" role="menu" aria-label="Administrativo">
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Operações</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4-1" aria-owns="submenu-4-1" href="#">Pessoal</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4-2" aria-owns="submenu-4-2" href="#">Patentes</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4-3" aria-owns="submenu-4-3" href="#">Calendário</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Notícias</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Formulários</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4-4" aria-owns="submenu-4-4" href="#">Instruções</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Prestação de Contas</a></li>
+						</ul>
+						<!--		Menu Administrativo Pessoal			-->
+						<ul data-menu="submenu-4-1" id="submenu-4-1" class="menu__level" tabindex="-1" role="menu" aria-label="Administrativo">
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Rangers</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Green Berets</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Nighstalkers</a></li>
+						</ul>
+						<!--		Menu Administrativo Patentes			-->
+						<ul data-menu="submenu-4-2" id="submenu-4-2" class="menu__level" tabindex="-1" role="menu" aria-label="Administrativo">
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Enlisted</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">NCO</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">WO</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Officer</a></li>
+						</ul>
+						<!--		Menu Administrativo Condecorações			-->
+						<ul data-menu="submenu-4-3" id="submenu-4-3" class="menu__level" tabindex="-1" role="menu" aria-label="Administrativo">
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Barretes</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Medalhas</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Citações</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Brevês</a></li>
+						</ul>
+						<!--		Menu Administrativo Instruções			-->
+						<ul data-menu="submenu-4-4" id="submenu-4-4" class="menu__level" tabindex="-1" role="menu" aria-label="Administrativo">
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">TBC</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">TAC</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">RASP</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">SFQC</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">RWTC</a></li>
+						</ul>
+					</div>
+				</nav>
 			</header>
-			<button class="action action--open" aria-label="Open Menu"><span class="icon icon--menu"></span></button>
-			<nav id="ml-menu" class="menu">
-				<button class="action action--close" aria-label="Close Menu"><span class="icon icon--cross"></span></button>
-				<div class="menu__wrap">
-					<!--		Menu Principal			-->
-					<ul data-menu="main" class="menu__level" tabindex="-1" role="menu" aria-label="Inicial">
-						<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Inicio</a></li>
-						<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-2" aria-owns="submenu-2" href="#">Sobre</a></li>
-						<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-3" aria-owns="submenu-3" href="#">Galeria</a></li>
-						<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4" aria-owns="submenu-4" href="#">Administrativo</a></li>
-						<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Alistamento</a></li>
-						<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Contato</a></li>
-					</ul>
-					<!--		Menu Sobre			-->
-					<ul data-menu="submenu-2" id="submenu-2" class="menu__level" tabindex="-1" role="menu" aria-label="Sobre">
-						<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-2-1" aria-owns="submenu-2-1" href="#">USASOC</a></li>
-						<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Estado Maior</a></li>
-						<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Estatuto Disciplinar</a></li>
-					</ul>
-					<!--		Menu Sobre - USASOC			-->
-					<ul data-menu="submenu-2-1" id="submenu-2-1" class="menu__level" tabindex="-1" role="menu" aria-label="USASOC">
-						<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Rangers</a></li>
-						<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Green Berets</a></li>
-						<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Nightstalkers</a></li>
-					</ul>
-					<!--		Menu Galeria			-->
-					<ul data-menu="submenu-3" id="submenu-3" class="menu__level" tabindex="-1" role="menu" aria-label="Galeria">
-						<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Fotos - Operações</a></li>
-						<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Fotos - Militares</a></li>
-						<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Youtube - Canais</a></li>
-						<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Wallpapers</a></li>
-					</ul>
-					<!--		Menu Administrativo			-->
-					<ul data-menu="submenu-4" id="submenu-4" class="menu__level" tabindex="-1" role="menu" aria-label="Administrativo">
-						<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Operações</a></li>
-						<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4-1" aria-owns="submenu-4-1" href="#">Pessoal</a></li>
-						<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4-2" aria-owns="submenu-4-2" href="#">Patentes</a></li>
-						<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4-3" aria-owns="submenu-4-3" href="#">Calendário</a></li>
-						<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Notícias</a></li>
-						<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Formulários</a></li>
-						<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4-4" aria-owns="submenu-4-4" href="#">Instruções</a></li>
-						<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Prestação de Contas</a></li>
-					</ul>
-					<!--		Menu Administrativo Pessoal			-->
-					<ul data-menu="submenu-4-1" id="submenu-4-1" class="menu__level" tabindex="-1" role="menu" aria-label="Administrativo">
-						<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Rangers</a></li>
-						<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Green Berets</a></li>
-						<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Nighstalkers</a></li>
-					</ul>
-					<!--		Menu Administrativo Patentes			-->
-					<ul data-menu="submenu-4-2" id="submenu-4-2" class="menu__level" tabindex="-1" role="menu" aria-label="Administrativo">
-						<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Enlisted</a></li>
-						<li class="menu__item" role="menuitem"><a class="menu__link" href="#">NCO</a></li>
-						<li class="menu__item" role="menuitem"><a class="menu__link" href="#">WO</a></li>
-						<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Officer</a></li>
-					</ul>
-					<!--		Menu Administrativo Condecorações			-->
-					<ul data-menu="submenu-4-3" id="submenu-4-3" class="menu__level" tabindex="-1" role="menu" aria-label="Administrativo">
-						<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Barretes</a></li>
-						<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Medalhas</a></li>
-						<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Citações</a></li>
-						<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Brevês</a></li>
-					</ul>
-					<!--		Menu Administrativo Instruções			-->
-					<ul data-menu="submenu-4-4" id="submenu-4-4" class="menu__level" tabindex="-1" role="menu" aria-label="Administrativo">
-						<li class="menu__item" role="menuitem"><a class="menu__link" href="#">TBC</a></li>
-						<li class="menu__item" role="menuitem"><a class="menu__link" href="#">TAC</a></li>
-						<li class="menu__item" role="menuitem"><a class="menu__link" href="#">RASP</a></li>
-						<li class="menu__item" role="menuitem"><a class="menu__link" href="#">SFQC</a></li>
-						<li class="menu__item" role="menuitem"><a class="menu__link" href="#">RWTC</a></li>
-					</ul>
+			<main>
+				<div class="logo-celular">
+					<img src="images/misc/logo-usasoc3.png" alt="">
 				</div>
-			</nav>
-			<div class="content">
-				<p class="info">Por favor escolha uma categoria</p>
-			</div>
+			</main>
 			<script src="js/classie.js"></script>
 			<script src="js/dummydata.js"></script>
 			<script src="js/main.js"></script>

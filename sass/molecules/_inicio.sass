@@ -1,0 +1,19 @@
+body
+	overflow: hidden
+	color: #cecece
+	background:
+		image: url(../images/background.jpg)
+		position: top center
+		repeat: no-repeat
+		color: $preto
+		attachment: fixed
+		position-x: 100%
+		size: cover
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+.logo-celular
+	display: none
+	+breakpoint($celular)
+		margin-top: 50px
+		text-align: center
+		display: block
