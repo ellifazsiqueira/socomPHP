@@ -1,8 +1,30 @@
-@import molecules/mixins
-@import ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables
-@import ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins
-@import ../bower_components/breakpoint-sass/stylesheets/breakpoint
-
-@import ../bower_components/sass-flex-mixin/flex
-
-@import templates/home
+.content
+  display: block
+  margin-left: 300px
+  text-align: justify
+  background: $cinza-escuro
+  color: $cinza-claro
+  .conteudo
+    display: block
+    margin-right: 30px
+    padding-left: 25px
+    text-align: center
+    .regimental
+      margin: 25px 10px auto
+    h1
+      padding: 50px 0 0
+      color: $vermelho-claro
+      +font-size(24px)
+      font-weight: $bold
+      +breakpoint($celular)
+        +font-size(20px)
+    h2
+      padding: 25px 0 0
+      color: rgba($vermelho-claro, .7)
+      text-transform: uppercase
+    p
+      padding: 15px 25px 0
+      text-align: justify
+    span.ps
+      padding: 15px 25px 0
+      text-align: justify
