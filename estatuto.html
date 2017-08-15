@@ -1,10 +1,283 @@
 <!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Documento sem título</title>
-</head>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device=width, initial-scale=1.0">
+		<title>USASOC Milsim Brasil</title>
+		<link rel="stylesheet" type="text/css" href="css/sobre.css" />
+		<link rel="stylesheet" type="text/css" href="css/plugin.css" />
+		<link rel="stylesheet" type="text/css" href="css/geral.css" />
+		<script src="js/modernizr-custom.js"></script>
+	</head>
 
-<body>
-</body>
+	<body>
+		<div class="container-x">
+			<header class="bp-header cf">
+				<div class="dummy-logo">
+					<div class="dummy-icon"><img src="images/misc/logo-usasoc.png" alt=""></div>
+					<div class="dummy-heading">USASOC - Milsim - Brasil</div>
+				</div>
+				<button class="action action--open" aria-label="Open Menu"><span class="icon icon--menu"></span></button>
+				<nav id="ml-menu" class="menu">
+					<button class="action action--close" aria-label="Close Menu"><span class="icon icon--cross"></span></button>
+					<div class="menu__wrap">
+						<!--		Menu Principal			-->
+						<ul data-menu="main" class="menu__level" tabindex="-1" role="menu" aria-label="Inicial">
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="index.html">Inicio</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-2" aria-owns="submenu-2" href="sobre.html">Sobre</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-3" aria-owns="submenu-3" href="galeria.html">Galeria</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4" aria-owns="submenu-4" href="administrativo.html">Administrativo</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="alistamento.html">Alistamento</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="blog.html">Blog</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="contato.html">Contato</a></li>
+						</ul>
+						<!--		Menu Sobre			-->
+						<ul data-menu="submenu-2" id="submenu-2" class="menu__level" tabindex="-1" role="menu" aria-label="Sobre">
+							<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-2-1" aria-owns="submenu-2-1" href="#">USASOC</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="estado-maior.html">Estado Maior</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="estatuto.html">Estatuto Disciplinar</a></li>
+						</ul>
+						<!--		Menu Sobre - USASOC			-->
+						<ul data-menu="submenu-2-1" id="submenu-2-1" class="menu__level" tabindex="-1" role="menu" aria-label="USASOC">
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">O Comando</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Rangers</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Green Berets</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Nightstalkers</a></li>
+						</ul>
+						<!--		Menu Galeria			-->
+						<ul data-menu="submenu-3" id="submenu-3" class="menu__level" tabindex="-1" role="menu" aria-label="Galeria">
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Fotos - Operações</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Fotos - Militares</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Youtube - Canais</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Wallpapers</a></li>
+						</ul>
+						<!--		Menu Administrativo			-->
+						<ul data-menu="submenu-4" id="submenu-4" class="menu__level" tabindex="-1" role="menu" aria-label="Administrativo">
+							<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4-1" aria-owns="submenu-4-1" href="#">Pessoal</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4-2" aria-owns="submenu-4-2" href="#">Patentes</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4-3" aria-owns="submenu-4-3" href="#">Condecorações</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4-5" aria-owns="submenu-4-5" href="#">MOS</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Calendario</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Formulários</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4-4" aria-owns="submenu-4-4" href="#">Instruções</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Prestação de Contas</a></li>
+						</ul>
+						<!--		Menu Administrativo Pessoal			-->
+						<ul data-menu="submenu-4-1" id="submenu-4-1" class="menu__level" tabindex="-1" role="menu" aria-label="Administrativo">
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Estado-Maior</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Rangers</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Green Berets</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Nighstalkers</a></li>
+						</ul>
+						<!--		Menu Administrativo Patentes			-->
+						<ul data-menu="submenu-4-2" id="submenu-4-2" class="menu__level" tabindex="-1" role="menu" aria-label="Patentes">
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Enlisted</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">NCO</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">WO</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Officer</a></li>
+						</ul>
+						<!--		Menu Administrativo Condecorações			-->
+						<ul data-menu="submenu-4-3" id="submenu-4-3" class="menu__level" tabindex="-1" role="menu" aria-label="Condecorações">
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Barretes</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Medalhas</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Citações</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Brevês</a></li>
+						</ul>
+						<!--		Menu Administrativo Instruções			-->
+						<ul data-menu="submenu-4-4" id="submenu-4-4" class="menu__level" tabindex="-1" role="menu" aria-label="Instruções">
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">TBC</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">TAC</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">RASP</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">SFQC</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">RWTC</a></li>
+						</ul>
+						<!--		Menu Administrativo Funções			-->
+						<ul data-menu="submenu-4-5" id="submenu-4-5" class="menu__level" tabindex="-1" role="menu" aria-label="MOS">
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">11X Candidato Infantaria</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">11B Praça Infantaria</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">11A Oficial Infantaria</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">18X Candidato SF</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">18B Sargento SF</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">15(0)X Candidato SOAR</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">15A Oficial SOAR</a></li>
+							<li class="menu__item" role="menuitem"><a class="menu__link" href="#">150A Praça SOAR</a></li>
+						</ul>
+					</div>
+				</nav>
+			</header>
+			<main>
+				<div class="content">
+					<div class="conteudo">
+						<h1>U.S. Army Special Operations Command</h1>
+						<h2>Estado-Maior</h2>
+						<br>
+						<img src="images/estado-maior/s2-corregedoria.png" alt="">
+						<h2>S2 - Corregedoria</h2>
+						<br>
+						<h3>Regulamento Disciplinar</h3>
+						<br>
+						<span class="titulo-estatuto">
+							TÍTULO I <br><br> CAPÍTULO I <br> DAS DISPOSIÇÕES GERAIS
+						</span>
+						<p><center>Sessão I <br> Da Finalidade e do Âmbito de Aplicação</center></p>
+						<p>Art. 1. O Regulamento Disciplinar do SOCOM tem por finalidade especificar as transgressões disciplinares e estabelecer normas relativas a punições disciplinares, conduta idonea, recursos e recompensas.</p>
+						<p>
+							<center>Seção II <br> Dos Principios Gerais do Regulamento</center>
+						</p>
+						<p>Art. 2.  A camaradagem é indispensável à formação e ao convívio da família SOCOM, contribuindo para as melhores relações sociais entre os integrantes.</p>
+						<p>§ 1º  Incumbe aos membros incentivar e manter a harmonia e a amizade entre seus pares e subordinados.</p>
+						<p>Art. 3.  A civilidade é de interesse vital para a disciplina consciente.</p>
+						<p>§ 1º  É dever do superior tratar os subordinados em geral, e os recrutas em particular, com interesse e bondade.</p>
+						<p>§ 2º  O subordinado é obrigado a todas as provas de respeito e consideração para com os seus superiores hierárquicos.</p>
+						<span class="titulo-estatuto">
+							TÍTULO II <br><br> DAS TRANSGRESSÕES DISCIPLINARES <br><br> CAPÍTULO I
+						</span>
+						<p>
+							<center>Da Conceituação e da Especificação</center>
+						</p>
+						<p>Art. 4.  Transgressão disciplinar é toda ação praticada pelo membro contrária aos preceitos estatuídos no ordenamento jurídico pátrio ofensiva à etica, ou, ainda, que afete a honra pessoal.</p>
+						<p>§ 1º  É vedada a aplicação de mais de uma penalidade por uma única transgressão disciplinar.</p>
+						<p>Art. 5.  São transgressões disciplinares todas as ações especificadas no Anexo I deste Regulamento.</p>
+						<span class="titulo-estatuto">
+							CAPÍTULO II <br><br> 
+						</span>
+						<p class="center">Do Julgamento</p>
+						<p>Art. 6.  A competência para julgar e proferir decisões acerca das transgressões disciplinares será única e exclusiva da CORREGEDORIA USASOC.</p>
+						<p>§ 1º  - O julgamento da transgressão deve ser precedido de análise que considere:</p>
+						<p>&nbsp;&nbsp;I – a pessoa do transgressor;</p>
+						<p>&nbsp;&nbsp;II – as causas que a determinaram;</p>
+						<p>&nbsp;&nbsp;III – a natureza dos fatos ou atos que a envolveram; e</p>
+						<p>&nbsp;&nbsp;IV – as conseqüências que dela possam advir.</p>
+						<p>Art. 7.  No julgamento da transgressão, podem ser levantadas causas que justifiquem a falta ou circunstâncias que a atenuem ou a agravem. </p>
+						<p>Art. 8. - São circunstâncias atenuantes: </p>
+						<p>&nbsp;&nbsp;I-  bom comportamento;</p>
+						<p>&nbsp;&nbsp;II- relevância de serviços prestados;</p>
+						<p>&nbsp;&nbsp;III- ter sido cometida a transgressão, em defesa própria, de seus direitos ou de outrem, não se configurando causa de justificação;</p>
+						<p>Art. 9.  São circunstâncias agravantes: </p>
+						<p>&nbsp;&nbsp;I- mau comportamento; </p>
+						<p>&nbsp;&nbsp;II- prática simultânea ou conexão de duas ou mais transgressões;</p>
+						<p>&nbsp;&nbsp;III- reincidência de transgressão, mesmo que a punição anterior tenha sido verbal; </p>
+						<p>&nbsp;&nbsp;IV- conluio de duas ou mais pessoas; </p>
+						<p>&nbsp;&nbsp;V- ter abusado o transgressor de sua autoridade hierárquica ou funcional;</p>
+						<p>&nbsp;&nbsp;VI- ser praticada a transgressão: </p>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;a)- em presença de subordinado; </p>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;b)- com premeditação; </p>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;c)- em presença de tropa;</p>
+						<span class="titulo-estatuto">
+							CAPÍTULO III
+						</span>
+						<p>
+							<center>Da Classificação</center>
+						</p>
+						<p>Art. 10.  A transgressão da disciplina deve ser classificada, desde que não haja causa de justificação, em leve, média e grave.</p>
+						<p>Parágrafo único.  A competência para classificar a transgressão é da autoridade a qual couber sua aplicação.</p>
+						<p>Art. 11.  Será sempre classificada como “grave” a transgressão da disciplina que constituir ato que afete a honra pessoal, ou qualquer ato que possa ferir a moral.</p>
+						<span class="titulo-estatuto">
+							CAPÍTULO IV <br><br> PUNIÇÕES DISCIPLINARES
+						</span>
+						<p>
+							<center>Seção I<br>Da Gradação, Conceituação e Execução</center>
+						</p>
+						<p>Art. 12.  A punição disciplinar objetiva a preservação da disciplina e deve ter em vista o benefício educativo ao punido e à coletividade a que ele pertence.</p>
+						<p>Art. 13.  Segundo a classificação resultante do julgamento da transgressão, as punições disciplinares a que estão sujeitos os membros são, em ordem de gravidade crescente:</p>
+						<p>&nbsp;&nbsp;I – a advertência;</p>
+						<p>&nbsp;&nbsp;II – a repreensão;</p>
+						<p>&nbsp;&nbsp;III – a suspensão; e</p>
+						<p>&nbsp;&nbsp;IV –a exclusão a bem da disciplina.</p>
+						<p>Art. 14º  Advertência é a forma mais branda de punir, consistindo em admoestação feita verbalmente ao transgressor, em caráter reservado ou ostensivo.</p>
+						<p>§ 1º - Quando em caráter ostensivo, a advertência poderá ser na presença de superiores, no círculo de seus pares ou na presença de toda ou parte da unidade. </p>
+						<p>§ 2º - A advertência, por ser verbal, não constará das alterações do punido, devendo, entretanto, ser registrada para fins de referencia na Ficha Individual de Punições.</p>
+						<p>Art. 15. - Repreensão - É a censura enérgica ao transgressor, feita por escrito e publicada na  Ficha Individual.</p>
+						<p>Art. 16. - Suspensão – Consiste no impedimento temporário do transgressor em participar de quaisquers eventos oficiais USASOC, publicada na Ficha Individual</p>
+						<p>§ 1º - A aplicação da suspensão dar-se-a das formas a seguir:</p>
+						<p>&nbsp;&nbsp;a) Parcial: impedimento de participar de eventos oficiais, por tempo à ser estipulado pela autoridade competente, à contar do término do briefing.</p>
+						<p>&nbsp;&nbsp;b) Integral: impedimento de participar de eventos oficiais em sua totalidade.</p>
+						<p>&nbsp;&nbsp;c) Interstício: congelamento temporário ou anulação total do interstício</p>
+						<p>Art. 17.  Exclusão a bem da disciplina consistem no afastamento do membro das fileiras do USASOC.</p>
+						<p>§ 1º  A exclusão a bem da disciplina será aplicada, quando:</p>
+						<p>&nbsp;&nbsp;I – a transgressão afete a honra pessoal, e, como repressão imediata, se torne absolutamente necessário à disciplina;</p>
+						<span class="titulo-estatuto">
+							CAPÍTULO V <br><br> PROCEDIMENTO DE APURAÇÃO DE TRANSGRESSÃO DISCIPLINAR
+						</span>
+						<p>
+							<center>Seção I <br> Dos Prazos</center>
+						</p>
+						<p>Art. 18. Comunicação do fato – o participante deverá comunicar imediatamente o orgão de Corregedoria ou ao Superior imediato.</p>
+						<p>Art. 19. Razão de Defesa – prazo de 3 (três) dias para que o acusado apresente suas justificativas de defesa à partir da notificação oficial pelo orgão Corregedor.</p>
+						<p>Art. 20. Análise da Corregedoria-  prazo de 7 (sete) dias à contar do recebimento da razão de defesa para apreciação e proferimento da decisão. Prorrogável por mais 7 (sete) dias com justificativas.</p>
+						<p>Art. 21. Recurso – 3 (três) dias, contados à partir da solução do corregedor, para o interessado recorrer da decisão proferida.</p>
+						<p>§ 1º  - Análise Recursal - 7 (sete) dias à contar do recebimento do recurso para apreciação e proferimento da decisão. Prorrogável por mais 7 (sete) dias com justificativas.</p>
+						<br>
+						<br>
+						<p><center>ANEXO I <br> RELAÇÃO DE TRANSGRESSÕES DISCIPLINARES</center></p>
+						<p>1. Concorrer para a discórdia ou a desarmonia ou cultivar inimizade entre membros;</p>
+						<p>2. Fazer uso de artifícios ou programas fraudulentos, classificados como “cheaters,  ou utilizar-se de qualquer outro meio  para benefício próprio ou de terceiros;</p>
+						<p>3. Proferir ofensas pessoais à outros membros, que ataquem a honra, a moral, a ética e os bons costumes;</p>
+						<p>4. Concorrer para a discórdia ou a desarmonia ou cultivar inimizade para com quaisquer outras casas de milsim e demais jogadores da comunidade ArmA III;</p>
+						<p>5. Utilizar-se de linguajar chulo, de palavras de baixo calão, ou de conotação sexual em ambiente de simulação ou em momentos inoportunos</p>
+						<p>6. Deixar de comunicar uma trangressão que tenha presenciado para a Corregedoria ou superior imediato;</p>
+						<p>7. Ferir ou matar outros membros deliberadamente;</p>
+						<p>8. Ferir ou matar civil deliberadamente;</p>
+						<p>9. Disparar em zona verde, sem autorização previa de superior;</p>
+						<p>10. Compartilhar ideias ou conteúdos ofensivos e/ou inapropriados em quaisquer meios de comunicação oficiais USSOCOM, incluindo os grupos oficiais no WhatsApp.</p>
+						<p>11. Associar-se ou promover insurreição, organizada ou não, contra qualquer autoridade civil ou militar instituída, caracterizada por atos explícitos de desobediência, de não cumprimento de deveres, e desordem;</p>
+						<p>12. Negar-se ou deixar de cumprir ordens delegadas por seu superior.</p>
+						<p>&nbsp;&nbsp;a) Em caso de ordem que contrarie quaisquer leis do ordenamento jurídico vigente, o operador pode solicitar a ordem por escrito em qualquer meio de comunicação.</p>
+						<p>13. Induzir ou concorrer intencionalmente para que outrem incida em transgressão disciplinar</p>
+						<br>
+						<br>
+						<p><i>Última atualização - 14AGO2017</i></p>
+					</div>
+				</div>
+			</main>
+			<script src="js/classie.js"></script>
+			<script src="js/dummydata.js"></script>
+			<script src="js/main.js"></script>
+			<script>
+			(function() {
+				var menuEl = document.getElementById('ml-menu'),
+					mlmenu = new MLMenu(menuEl, {
+						// breadcrumbsCtrl : true, // show breadcrumbs
+						initialBreadcrumb : 'Inicio', // initial breadcrumb text
+						backCtrl : false, // show back button
+						// itemsDelayInterval : 60, // delay between each menu item sliding animation
+						//onItemClick: loadDummyData // callback: item that doesn´t have a submenu gets clicked - onItemClick([event], [inner HTML of the clicked item])
+					});
+
+				// mobile menu toggle
+				var openMenuCtrl = document.querySelector('.action--open'),
+					closeMenuCtrl = document.querySelector('.action--close');
+
+				openMenuCtrl.addEventListener('click', openMenu);
+				closeMenuCtrl.addEventListener('click', closeMenu);
+
+				function openMenu() {
+					classie.add(menuEl, 'menu--open');
+					closeMenuCtrl.focus();
+				}
+
+				function closeMenu() {
+					classie.remove(menuEl, 'menu--open');
+					openMenuCtrl.focus();
+				}
+
+				// simulate grid content loading
+				var gridWrapper = document.querySelector('.content');
+
+				function loadDummyData(ev, itemName) {
+					ev.preventDefault();
+
+					closeMenu();
+					gridWrapper.innerHTML = '';
+					classie.add(gridWrapper, 'content--loading');
+					setTimeout(function() {
+						classie.remove(gridWrapper, 'content--loading');
+						gridWrapper.innerHTML = '<ul class="products">' + dummyData[itemName] + '<ul>';
+					}, 700);
+				}
+			})();
+			</script>
+		</div>
+	</body>
 </html>
